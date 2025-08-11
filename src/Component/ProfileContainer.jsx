@@ -3,6 +3,7 @@ import { IoChevronDownSharp } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { IoStar } from "react-icons/io5";
 import { IoLogOutOutline } from "react-icons/io5";
+import ProfilePicture from "../images/Logo/profPic.png";
 
 const ProfileContainer = () => {
   const checkBoxRef = useRef(null);
@@ -27,11 +28,7 @@ const ProfileContainer = () => {
   return (
     <>
       <div className="profile-container">
-        <img
-          className="profile_picture"
-          src="../src/images/Logo/profPic.png"
-          alt="profile"
-        />
+        <img className="profile_picture" src={ProfilePicture} alt="profile" />
         <div className="dropdown-container">
           <div className="dropdown" ref={dropDownRef}>
             <input
