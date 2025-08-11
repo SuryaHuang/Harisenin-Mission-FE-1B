@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../Css/Login.css";
 import eyeIcon from "../images/Logo/eye.png";
 import googleIcon from "../images/Logo/Gicon.png";
@@ -34,9 +34,9 @@ const LoginForm = () => {
         <div className="login-register">
           <p>
             Belum punya akun?
-            <a href="/register" className="register-link">
+            <Link to="/register" className="register-link">
               Daftar
-            </a>
+            </Link>
             <a href="#" className="forgot-password">
               Lupa kata sandi?
             </a>
