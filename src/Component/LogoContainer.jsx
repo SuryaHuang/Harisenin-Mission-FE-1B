@@ -1,6 +1,8 @@
 import "../Css/Beranda.css";
 import MenuContainer from "../Component/MenuContainer";
 import ProfileContainer from "./ProfileContainer";
+import Logo from "../images/Logo/Logo.png";
+import LogoSmall from "../images/Logo/Logo-small.png";
 
 const LogoContainer = () => {
   return (
@@ -9,10 +11,10 @@ const LogoContainer = () => {
         <picture>
           <source
             media="(max-width: 480px)"
-            srcSet="../src/images/Logo/Logo-small.png"
+            srcSet={LogoSmall}
             alt="small-logo"
           ></source>
-          <img className="logo" src="../src/images/Logo/Logo2.png" alt="logo" />
+          <img className="logo" src={Logo} alt="logo" />
         </picture>
         <MenuContainer />
         <ProfileContainer />
